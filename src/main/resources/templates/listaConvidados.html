@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>VIP - Verity Internal POC</title>
+<link href="css/bootstrap.min.css" rel="StyleSheet"/>
+</head>
+<body>
+	<div class="container">
+		<h1>Lista Convidados VIP</h1>
+		<span th:text="${convidados}"></span>
+		
+		<div>
+			<table>
+			
+			
+			
+			</table>
+		</div>
+		
+		<hr/>
+		
+		<form action="salvar" method="post">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome"/>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
+			</div>
+			<div class="form-group">
+				<label for="telefone">Telefone</label>
+				<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone"/>
+			</div>
+<!-- 			<div> -->
+<!-- 			<label>	</label> -->
+<!-- 			<input/> -->
+<!-- 			</div> -->	
+		<button type="submit" class="btn btn-success">Convidar</button>
+		
+		</form>
+	</div>
+	
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
